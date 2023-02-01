@@ -1,5 +1,6 @@
+require("dotenv").config();
 const express = require("express");
-const bodyParser = require("body-parser");
+const bodyParser = require('body-parser');
 const usersRouter = require('./routers/users');
 
 const app = express();
@@ -13,5 +14,5 @@ app.get('/', (req, res) => {
 })
 
 app.listen(port, () => {
- console.log(`Web server is listening on port ${port}!`);
+  console.log(`Web server is listening on port ${port}!`);
 });
